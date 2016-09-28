@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prac1</string>
+  <string name="KEY_USERNAME">username</string>
+  <string name="KEY_PASSWORD">password</string>
+</resources>
