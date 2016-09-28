@@ -1,46 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:orientation="vertical">
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
 
   <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:textAppearance="@color/colorPrimary"
+	android:text="Medium Text"
 	android:id="@+id/new_activity_user_name"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:layout_gravity="center_horizontal"
-	android:textAppearance="?android:attr/textAppearanceLarge"
-	android:layout_marginTop="36dp"
-	android:layout_marginEnd="68dp"
 	android:layout_alignParentTop="true"
-	android:layout_alignParentEnd="true"/>
+	android:layout_alignParentEnd="true"
+	android:layout_marginEnd="85dp"
+	android:layout_marginTop="53dp"
+	android:autoLink="email"
+	android:autoText="false"
+	android:capitalize="none"
+	android:typeface="monospace" />
 
   <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:textAppearance="?android:attr/textAppearanceMedium"
+	android:text="Medium Text"
 	android:id="@+id/new_activity_password"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:layout_gravity="center_horizontal"
-	android:textAppearance="?android:attr/textAppearanceLarge"
-	android:layout_marginTop="35dp"
 	android:layout_below="@+id/new_activity_user_name"
-	android:layout_alignStart="@+id/new_activity_user_name"/>
+	android:layout_alignStart="@+id/new_activity_user_name"
+	android:layout_marginTop="31dp"
+	android:typeface="monospace" />
 
   <TextView
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:textAppearance="?android:attr/textAppearanceLarge"
-	android:text="User Name:"
-	android:id="@+id/U"
-	android:layout_above="@+id/new_activity_password"
+	android:textAppearance="?android:attr/textAppearanceMedium"
+	android:text="User Name"
+	android:layout_alignTop="@+id/new_activity_user_name"
 	android:layout_alignParentStart="true"
-	android:layout_marginStart="56dp"/>
+	android:layout_marginStart="35dp"
+	android:id="@+id/textView5" />
 
   <TextView
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:textAppearance="?android:attr/textAppearanceLarge"
-	android:text="Password:"
-	android:id="@+id/textView2"
+	android:textAppearance="?android:attr/textAppearanceMedium"
+	android:text="Password"
+	android:id="@+id/textView4"
 	android:layout_alignTop="@+id/new_activity_password"
-	android:layout_alignStart="@+id/U"/>
+	android:layout_alignStart="@+id/textView5" />
 </RelativeLayout>
